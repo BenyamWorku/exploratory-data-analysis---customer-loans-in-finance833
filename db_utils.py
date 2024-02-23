@@ -110,4 +110,5 @@ class RDSDatabaseConnector:
 if __name__ == "__main__":
     connector=RDSDatabaseConnector()
     df=connector.extract_data(table_name='loan_payments')
+    # make this part extendable : /home/benmlengineer/Documents/Aicore/
     connector.save_data(df,file_path='/home/benmlengineer/Documents/Aicore/exploratory-data-analysis---customer-loans-in-finance833/loan_payments_data.csv')
